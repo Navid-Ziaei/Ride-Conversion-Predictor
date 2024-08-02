@@ -1,3 +1,17 @@
+
+__pycache__/
+saved_model/
+results/
+result/
+data/
+.idea/
+.spyderproject/
+.spyproject/
+device_path.json
+configs/settings.json
+data/
+documents/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
