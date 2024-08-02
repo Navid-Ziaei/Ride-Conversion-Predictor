@@ -1,0 +1,14 @@
+# Dataset name to use : "pilot01" "clear"
+dataset: "pet_ct"
+
+model: "unet"
+
+# Training LDGD
+load_trained_model : False
+batch_size : 100
+num_epochs : 100
+test_size: 0.2
+
+# Enable or disable debug mode
+debug_mode: true
+

@@ -1,0 +1,3 @@
+raw_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM/"
+preprocessed_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM_preprocessed/"
+model_path: "D:/projects/Ride-Conversion-Predictor/saved_model/"
