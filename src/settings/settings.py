@@ -9,7 +9,7 @@ class Settings:
     def __init__(self):
 
         self.__supported_dataset = ['pet_ct']
-        self.__supported_models = ['unet']
+        self.__supported_models = ['logistic_regression', 'xgboost', 'tabnet']
         self.__model = None
         self.__debug_mode = False
         self.__load_pretrained_model = False
@@ -20,6 +20,11 @@ class Settings:
         self.load_trained_model = False
         self.batch_size = 2
         self.num_epochs = 10
+        self.sampling_method = 'None'
+        self.impute_strategy = 'mean'
+        self.missing_threshold = 0.7
+        self.remove_out_layers = False
+        self.scaling_mode = 'normalization'
 
 
     def load_settings(self):
@@ -57,7 +62,6 @@ class Settings:
     @dataset.setter
     def dataset(self, dataset_name):
         if isinstance(dataset_name, str) and dataset_name in self.__supported_dataset:
-            print(f"\n Selected Dataset is : {dataset_name}")
             self.__dataset = dataset_name
         else:
             raise ValueError(f"dataset should be selected from supported datasets: {self.__supported_dataset}")
@@ -69,7 +73,8 @@ class Settings:
     @model.setter
     def model(self, model_name):
         if isinstance(model_name, str) and model_name in self.__supported_models:
-            print(f"\n Selected Dataset is : {model_name}")
+            self.__model = model_name
+        elif isinstance(model_name, list):
             self.__model = model_name
         else:
             raise ValueError(f"dataset should be selected from supported datasets: {self.__supported_models}")

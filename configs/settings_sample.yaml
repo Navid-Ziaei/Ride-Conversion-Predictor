@@ -1,13 +1,16 @@
-# Dataset name to use : "pilot01" "clear"
-dataset: "pet_ct"
+model : # xgboost' 'logistic_regression' 'tabnet' 'ft_transformer' 'category_embedding' 'gandalf'
+  - 'xgboost'
+  - 'tabnet'
+  - 'logistic_regression'
+  - 'ft_transformer'
+  - 'category_embedding'
+  - 'gandalf'
 
-model: "unet"
-
-metric_list:
-  - "accuracy"
-  - "f1_score"
-  - "precision"
-  - "recall"
+# Preprocessing settings
+impute_strategy : 'mean'
+missing_threshold : 0.7
+remove_out_layers : False
+scaling_mode : 'normalization'
 
 # Training LDGD
 load_trained_model : False
@@ -15,9 +18,14 @@ batch_size : 100
 num_epochs : 100
 test_size: 0.2
 
-# Load a pretrained saved_model
-load_pretrained_model: true
-
 # Enable or disable debug mode
 debug_mode: false
+
+
+sampling_method: # 'RandomOverSampler' 'RandomUnderSampler' 'SMOTE' 'None'
+  - 'SMOTE'
+  - 'RandomOverSampler'
+  - 'RandomUnderSampler'
+  - 'None'
+
 

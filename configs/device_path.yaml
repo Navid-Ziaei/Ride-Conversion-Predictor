@@ -1,12 +1,12 @@
 
 # Windows path
-# raw_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM/"
-# preprocessed_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM_preprocessed/"
-# model_path: "D:/projects/Ride-Conversion-Predictor/saved_model/"
+raw_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM/"
+preprocessed_dataset_path: "D:/projects/Ride-Conversion-Predictor/data/DSM_preprocessed/"
+model_path: "D:/projects/Ride-Conversion-Predictor/saved_model/"
 
 # Linux Path
-raw_dataset_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/data/DSM/"
-preprocessed_dataset_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/data/DSM_preprocessed/"
-model_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/saved_model/"
+# raw_dataset_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/data/DSM/"
+# preprocessed_dataset_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/data/DSM_preprocessed/"
+# model_path: "/media/nziaei/0884BA9484BA83AA/projects/Ride-Conversion-Predictor/saved_model/"
 
 

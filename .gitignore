@@ -1,6 +1,7 @@
 
 __pycache__/
 saved_model/
+saved_models/
 results/
 result/
 data/
@@ -11,6 +12,8 @@ device_path.json
 configs/settings.json
 data/
 documents/
+lightning_logs/
+.pt_tmp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
